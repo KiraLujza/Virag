@@ -7,9 +7,10 @@ export default class Virag {
     this.#obj = obj;
     this.#pElem = pElem;
     console.log(this.#obj);
-    this.megjelen();
-    this.#gomb = document.getElementById(this.#obj.id);
-    this.esemeny();
+  this.megjelen();
+  
+  this.#gomb = document.getElementById(this.#obj.id);
+  this.esemeny();
   }
 
   megjelen() {
@@ -20,7 +21,7 @@ export default class Virag {
     }">
             <div class="card-body">
                 <p class="card-text">${this.#obj.nev}</p>
-                <button id="${this.#obj.id}">Kiválasztás</>button<>
+                <button id="${this.#obj.id}" aria-label="Mark ${this.#obj.nev} as favorite">Kedvenc <span aria-hidden="true">❤️</span></button>
             </div>
             </div>
     `;

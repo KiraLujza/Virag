@@ -1,4 +1,4 @@
-import { ViragLista } from "../adat.js";
+import { ViragLista } from "../../adat.js";
 export default class ViragSor{
 
 #obj= {}

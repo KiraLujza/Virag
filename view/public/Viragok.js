@@ -1,7 +1,7 @@
-import { ViragLista } from "./adat.js";
+import { ViragLista } from "../../adat.js";
 import Virag from "./Virag.js";
 
-export default class Viiragok{
+export default class Viragok{
     #lista = []
     #pElem
 constructor(lista, pElem){
